@@ -1,20 +1,20 @@
 /*  your css code here. If applicable */
 #container {
   margin: 20px;
-  font-family: Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px; /* default font size for the main text */
+  color: #000;     /* default color for the main text */
 }
 
-/* Before pseudo-element (inline) */
 #container::before {
-  content: "Before Element ";
+  content: "Before Element";
   color: #f00;
   font-size: 20px;
+  margin-right: 8px;
 }
 
-/* After pseudo-element (inline) */
 #container::after {
-  content: " After Element";
+  content: "After Element";
   color: #f00;
   font-size: 20px;
+  margin-left: 8px;
 }
